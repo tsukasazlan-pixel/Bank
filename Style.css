@@ -1,0 +1,188 @@
+
+/* Reset global */
+* {
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  scroll-behavior: smooth;
+  overflow-y: auto; /* biar scroll bisa jalan */
+  font-family: Arial, sans-serif;
+}
+
+.jersey-10-regular {
+  font-family: "Jersey 10", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  display: block;
+}
+
+.mask-link {
+  position: absolute;
+  top: 80%;
+  left: 25%;
+  display: inline-block;
+  width: 50vw;
+  /* kalau perlu, tambahkan z-index supaya di atas */
+  z-index: 15;
+  cursor: pointer;
+}
+#startBtn {
+  position: absolute;
+  top: 80%;
+  left: 25%;
+  display: inline-block;
+  width: 50vw;
+  /* kalau perlu, tambahkan z-index supaya di atas */
+  z-index: 15;
+  cursor: pointer;
+}
+
+.mask-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  cursor: pointer;
+}
+
+/*startBtn{
+  width: 100%;
+  height: auto;
+  display: block;
+  cursor: pointer;
+}*/
+
+.mask-img:hover {
+  filter: brightness(85%);
+  transition: filter 0.3s ease;
+}
+
+h1 {
+  position: absolute;
+  top: 5%;
+  width: 100%;
+  color: #000;
+  font-family: "Jersey 10", sans-serif;
+  font-size: 90px;
+  text-align: center;
+  z-index: 20;
+}
+
+.play {
+  position: absolute;
+  top: 35%; /* ganti dari -45px ke angka positif supaya bisa terlihat */
+  right: 70px;
+  font-family: "Jersey 10", sans-serif;
+  font-size: 65px;
+  color: navy;
+  text-decoration: none;
+z-index: 30;
+}
+
+h2 a:visited {
+  color: black;
+}
+
+/* Halaman penuh dengan flexbox untuk center */
+.page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+.bg-image {
+  position: absolute;
+  top: 0px;left: 0px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -10;
+}
+
+.btn-imgs {
+  display: block;
+  width: 10vw;
+  height: 10vh;
+}
+
+
+
+.pages {
+  position: relative;
+  height: 100vh;
+}
+
+#page3 {
+
+}
+
+/* Style tombol */
+button {
+  padding: 0;
+  font-size: 18px;
+  margin: 10px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  cursor:pointer;
+  
+}
+
+.nav-buttons {
+  margin-top: 500px;
+  display: flex;
+  gap: 10px; /* supaya tombol berdampingan */
+  position: absolute;
+}
+
+.btn-img {
+  width: 40vw;
+  height: auto;
+  cursor: pointer;
+  display: block;
+}
+
+.page {
+  position: relative;
+  height: 100vh;
+}
+
+.bg-image {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.nav-buttonss {
+  position: absolute !important;
+  top: 30px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  z-index: 10 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 1tpx !important;
+}
+
+.btn-imgs {
+  width: 100%;
+  cursor: pointer;
+  display: block;
+}
